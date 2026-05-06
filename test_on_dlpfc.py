@@ -16,9 +16,6 @@ import matplotlib.pyplot as plt
 if __name__ == "__main__":
     parse = argparse.ArgumentParser()
     os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-    datasets = ['151507', '151508', '151509', '151510', '151669', '151670', '151671', '151672', '151673', '151674',
-                '151675', '151676']
-    cluster_num = [7, 7, 7, 7, 5, 5, 5, 5, 7, 7, 7, 7]
     datasets = ['151674']
     cluster_num = [7]
     results = []
