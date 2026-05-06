@@ -30,8 +30,7 @@ if __name__ == "__main__":
         config.layer = 2
         config.datatype = "10x"
         config.method="mclust"
-        path = "D:/单切片空间域识别/数据集/DLPFC/"+ dataset
-        # path = "./data/DLPFC/" + dataset
+        path = "./data/DLPFC/"+ dataset
         adata = sc.read_visium(path, count_file='filtered_feature_bc_matrix.h5', load_images=True)
         df_meta = pd.read_csv(path + '/metadata.tsv', sep='\t')
         df_meta_layer = df_meta['layer_guess']
